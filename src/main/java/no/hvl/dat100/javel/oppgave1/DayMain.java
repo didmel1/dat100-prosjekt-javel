@@ -16,13 +16,47 @@ public class DayMain {
         System.out.println("==============");
         System.out.println();
 
-        /*
-        TODO
+        System.out.println("a)\n");
 
-         Write code that tests the methods you implement in the DailyPower class
-         Remember to teste the methods as you implement them
-         Remember to also to check that you get the expected results
-         */
+        DailyPower.printPowerPrices(DayPowerData.powerprices_day);
+
+
+        System.out.println("\n\nb)\n");
+
+        DailyPower.printPowerUsage(DayPowerData.powerusage_day);
+
+        System.out.println("\n\nc)\n");
+
+        System.out.println(DailyPower.computePowerUsage(DayPowerData.powerusage_day));
+
+        System.out.println("\nd)\n");
+
+        System.out.println(DailyPower.computeSpotPrice(DayPowerData.powerusage_day, DayPowerData.powerprices_day));
+
+        //På oppgave e) er metoden private og kan derfor bare brukes i egen klasse
+
+        System.out.println("\nf)\n");
+
+        System.out.printf("Total strømstøtte: %.2f", DailyPower.computePowerSupport(DayPowerData.powerusage_day, DayPowerData.powerprices_day));
+
+        System.out.println("\n\ng)\n");
+
+        System.out.println(DailyPower.computeNorgesPrice(DayPowerData.powerusage_day));
+
+        System.out.println("\nh)\n");
+
+        System.out.println(DailyPower.findPeakUsage(DayPowerData.powerusage_day));
+
+        System.out.println("\ni)\n");
+
+        System.out.println(DailyPower.findAvgPower(DayPowerData.powerusage_day));
+
+
+
+
+
+
+
 
     }
 }
